@@ -2,15 +2,23 @@
   "name": "wpg",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://saki007ster.github.io/wpg",
   "dependencies": {
+    "gh-pages": "1.2.0",
+    "jsonp": "0.2.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-images": "0.5.17",
+    "react-measure": "2.0.2",
+    "react-photo-gallery": "6.0.28",
     "react-scripts": "1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }
